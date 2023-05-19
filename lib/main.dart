@@ -47,7 +47,7 @@ class _MyAppState extends State<MyApp> {
             centerTitle: true,
             backgroundColor: primaryColor,
             elevation: 0.0,
-            iconTheme: const IconThemeData(color: Colors.white)),
+            iconTheme: IconThemeData(color: primaryColor)),
         brightness: Brightness.light,
       ),
       initialRoute: "/",
