@@ -1,16 +1,19 @@
 import 'dart:async';
 
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:fluttertoast/fluttertoast.dart';
+import 'package:wasty_bin/screens/about_vendor_screen.dart';
 import 'package:wasty_bin/screens/auth/email_verification_screen.dart';
 import 'package:wasty_bin/screens/auth/forgot_password_screen.dart';
 import 'package:wasty_bin/screens/auth/signup_screen.dart';
+import 'package:wasty_bin/screens/competition_screen.dart';
+import 'package:wasty_bin/screens/donate_screen.dart';
 import 'package:wasty_bin/screens/home_screen.dart';
 import 'package:wasty_bin/screens/auth/login_screen.dart';
 import 'package:wasty_bin/screens/profile_screen.dart';
+import 'package:wasty_bin/screens/sorting_guide_sreen.dart';
 import 'package:wasty_bin/screens/splash_screen.dart';
+import 'package:wasty_bin/screens/vendor_screen.dart';
 import 'package:wasty_bin/theme/theme.dart';
 
 Future<void> main() async {
@@ -43,6 +46,7 @@ class _MyAppState extends State<MyApp> {
         useMaterial3: true,
         scaffoldBackgroundColor: Colors.white,
         primaryColor: Colors.white,
+        splashColor: Colors.green[50],
         appBarTheme: AppBarTheme(
             centerTitle: true,
             backgroundColor: primaryColor,
@@ -53,13 +57,16 @@ class _MyAppState extends State<MyApp> {
       initialRoute: "/",
       routes: {
         '/': (context) => const SplashScreen(),
-        // '/': (context) => const EmailVerficationScreen(),
         '/login': (context) => const LoginScreen(),
         '/signup': (context) => const SignUpScreen(),
         '/email': (context) => const EmailVerficationScreen(),
         '/forgot': (context) => const ForgotPasswordScreen(),
         '/home': (context) => const HomeScreen(),
         '/profile': (context) => const ProfileScreen(),
+        '/guide': (context) => const SortingGuideScreen(),
+        '/competition': (context) => const CompetitionScreen(),
+        '/donate': (context) => const DonateScreen(),
+        '/vendor': (context) => const VendorScreen(),
       },
     );
   }

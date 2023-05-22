@@ -5,9 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:wasty_bin/screens/home_screen.dart';
 import 'package:wasty_bin/screens/auth/login_screen.dart';
-import 'package:wasty_bin/screens/profile_screen.dart';
-
-import '../main.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -54,7 +51,7 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Image.asset("assets/images/recycle.png"),
+        child: Image.asset("assets/images/splash.png"),
       ),
     );
   }

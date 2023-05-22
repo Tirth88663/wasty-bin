@@ -100,7 +100,7 @@ class _EmailVerficationScreenState extends State<EmailVerficationScreen> {
                     const Center(child: CircularProgressIndicator()),
                     const SizedBox(height: 8),
                     Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 32.0),
+                      padding: const EdgeInsets.symmetric(horizontal: 32.0),
                       child: Center(
                         child: Text(
                           'Verifying email....',

@@ -4,10 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:wasty_bin/screens/auth/email_verification_screen.dart';
-import 'package:wasty_bin/screens/auth/signup_screen.dart';
 import 'package:wasty_bin/theme/theme.dart';
-
-import 'forgot_password_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
